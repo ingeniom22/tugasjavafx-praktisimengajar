@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #34abeb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ingeniom22.controller.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="160.0" layoutY="14.0" text="Currency Converter" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+      <GridPane alignment="TOP_CENTER" hgap="5.0" layoutX="57.0" layoutY="61.0" prefHeight="218.0" prefWidth="408.0" vgap="5.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="61.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label text="Canadian Dollars" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="German Marks" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="British Pounds" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cadInput" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gbpInput" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gdmInput" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cadOutput" blendMode="SRC_ATOP" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="gbpOutput" blendMode="SRC_ATOP" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="gdmOutput" blendMode="SRC_ATOP" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="Exchange Rate" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Converted Amount" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="US Dollars ">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usdInput" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="doConvert" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#convertClicked" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #28e053;" text="Convert" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
